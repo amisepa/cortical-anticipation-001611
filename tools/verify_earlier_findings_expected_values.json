@@ -1,0 +1,77 @@
+{
+ "F1": {
+  "n_trials": 256,
+  "n_volleys": 190,
+  "onset_rel_reg_ms_median": -5.174999999988827,
+  "onset_rel_reg_ms_min": -5.475000000000563,
+  "offset_rel_reg_ms_max": 7.024999999999615,
+  "grid_period_ms": 1000.0,
+  "grid_resid_ms": [
+   -0.024999999993724487,
+   0.025000000050567905
+  ],
+  "mass_bins_outside_trial_windows": 0
+ },
+ "F2": {
+  "window_end_to_volley_n_minus_3_ms_median": 94.82500000001437,
+  "volleys_inside_window": 0
+ },
+ "F3": {
+  "bins_total_10pct": 2509,
+  "bins_10pct_within_volley_windows": 2509,
+  "bins_10pct_outside_volley_windows_within_20ms_of_2.45s_before_a_registration": 0,
+  "bins_10pct_outside_volley_windows_within_20ms_of_0.9s_before_a_registration": 0,
+  "bins_10pct_outside_volley_windows_within_20ms_of_0.5s_before_a_registration": 0,
+  "bins_10pct_outside_volley_windows_within_20ms_of_0.05s_before_a_registration": 0,
+  "bins_5pct_outside_volley_windows": 206,
+  "bins_5pct_lag_after_preceding_volley_offset_ms": [
+   20.24999999999988,
+   219.24999999999883
+  ]
+ },
+ "F4": {
+  "s_identical": true,
+  "o_identical": true
+ },
+ "F7": {
+  "n_00": 66,
+  "n_no_bits": 66,
+  "n_no_volley": 66,
+  "mismatch_00_vs_no_bits": 0,
+  "mismatch_00_vs_no_volley": 0
+ },
+ "F8": {
+  "frac_in_artifact_a3": 0.7976982252730481,
+  "artifact_free_hz": 1.455928811487532,
+  "frac_in_artifact_strict": 0.7575448271746889,
+  "frac_in_artifact_wide": 0.8055683693304784,
+  "all_hz": 7.115175735588248
+ },
+ "F10": {
+  "raw_trial_spacing_median": 1000.0,
+  "jitter_crosstab": {
+   "catch->catch": {
+    "-0.05": 0,
+    "0.0": 14,
+    "0.05": 0
+   },
+   "catch->stim": {
+    "-0.05": 0,
+    "0.0": 7,
+    "0.05": 45
+   },
+   "stim->catch": {
+    "-0.05": 42,
+    "0.0": 9,
+    "0.05": 0
+   },
+   "stim->stim": {
+    "-0.05": 19,
+    "0.0": 102,
+    "0.05": 17
+   }
+  },
+  "div_C09_E01_S000": "DIV 8, 2024-11-20",
+  "div_C09_E02_S000": "DIV 13, 2024-11-27 (dates give DIV 15)"
+ }
+}

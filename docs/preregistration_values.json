@@ -1,0 +1,18 @@
+{
+ "_status": "Frozen at tag prereg-v1 (CP2, 2026-10-28) once both hard gates pass; see docs/preregistration.md",
+ "SESOI_Q1": 0.059,
+ "SESOI_Q1_SECONDARY": 0.03,
+ "SESOI_Q2": 0.02,
+ "C_Q1": 1.0,
+ "C_Q2": 0.01,
+ "SHIFT_RANGE": [16, 240],
+ "N_RAND": 10000,
+ "ALPHA": 0.05,
+ "WINDOW_MS": [-265, -15],
+ "N_SENS_Q1": 20,
+ "SENS_DELTA_Q1": 0.05,
+ "N_SENS_Q2": 3,
+ "SENS_DELTA_Q2": 0.1,
+ "SPLIT_SHA256": "2d792f9ebc1fdf3a82f83c709a0c40ef6417c357dc5799fe40100715b9e65ef9",
+ "LOCK_SHA256": "c8364adf47b6bfa0de8980b30288f2a85e51909ecb2f1ac54f4c149c2483d3a2"
+}

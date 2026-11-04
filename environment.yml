@@ -1,0 +1,39 @@
+# After the first successful install, run:
+#   conda env export --no-builds > environment.lock.yml
+# and commit the lock file. The lock file, not this one, is what the preregistration references.
+# Pip set checked to resolve together on 2026-10-27 (dandi 0.81, pynwb 4.2, spikeinterface 0.105).
+name: organoid-anticipation
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11            # dandi and pingouin require >=3.11
+  - numpy>=1.26
+  - scipy>=1.11
+  - pandas>=2.1
+  - pyarrow>=14
+  - h5py>=3.10
+  - statsmodels>=0.14      # OLS-HC1/HAC (paper replication), TOST, quick MixedLM checks
+  - scikit-learn>=1.4      # decoders, nested CV
+  - matplotlib>=3.8
+  - pyyaml
+  - tqdm
+  - pytest
+  - jupyterlab
+  # R stack for the primary mixed model: the spec's small-sample correction (Kenward-Roger /
+  # Satterthwaite) is not available in statsmodels, so call lme4 + pbkrtest/lmerTest via rpy2.
+  - r-base>=4.3
+  - r-lme4
+  - r-lmertest
+  - r-pbkrtest
+  - r-metafor
+  - rpy2
+  - pip
+  - pip:
+      - dandi>=0.60        # DANDI CLI: ls / download
+      - pynwb>=2.6
+      - hdmf>=3.12
+      - remfile            # stream NWB without full download
+      - spikeinterface>=0.100   # only for raw-trace datasets
+      - pingouin           # convenience stats
+      - wildboottest       # wild cluster bootstrap (spec 6.4 check); verify Webb weights or implement in src/models
+      # The spec's Bayes factor (Cauchy prior scaled to SESOI on the AUC scale) is custom code in src/models

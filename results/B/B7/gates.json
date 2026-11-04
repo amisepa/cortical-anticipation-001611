@@ -1,0 +1,55 @@
+{
+ "commit": "a163d6a928570581f19a548eb9312e8ed1fa26f0",
+ "gate_b": {
+  "n_sequences": 27,
+  "n_tests": 432,
+  "min_p_holm": 0.7991600419979001,
+  "min_p_mc": 0.0018499075046247689,
+  "min_global_p_bonf": 0.23873465781064546,
+  "structural_00_mismatches": 0,
+  "all_sessions_identical_within_experiment": true,
+  "max_cross_experiment_shift_swap_agreement": 0.599609375,
+  "any_identical_across_experiments": false,
+  "modeled_structure": "label-dependent registration jitter (D-033): t0 from the engine grid; recorded intervals never used",
+  "pass": true
+ },
+ "gate_a": {
+  "by_question": {
+   "q1": {
+    "n_units": 14,
+    "n_cultures": 11,
+    "pooled_excess": 0.00174753378313374,
+    "se": 0.00633459335988969,
+    "df": 10.0,
+    "ci95": [
+     -0.0123668197935707,
+     0.0158618873598382
+    ],
+    "bound": 0.03,
+    "pass_": true,
+    "context_mean_auc_real_unresid": 0.545305281359177,
+    "context_mean_ref_unresid": 0.4990468501908202,
+    "context_mean_auc_real_resid": 0.48354751341193886,
+    "context_mean_ref_resid": 0.48382953576805404
+   },
+   "q2": {
+    "n_units": 11,
+    "n_cultures": 8,
+    "pooled_excess": 0.000481797999178519,
+    "se": 0.00185524565095873,
+    "df": 7.0,
+    "ci95": [
+     -0.00390516085974055,
+     0.00486875685809759
+    ],
+    "bound": 0.02,
+    "pass_": true,
+    "context_mean_auc_real_unresid": 0.5805062295988311,
+    "context_mean_ref_unresid": 0.5003551322695775,
+    "context_mean_auc_real_resid": 0.44786056074654446,
+    "context_mean_ref_resid": 0.44733553072250437
+   }
+  },
+  "pass": true
+ }
+}

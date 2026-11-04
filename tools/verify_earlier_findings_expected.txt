@@ -1,0 +1,63 @@
+DANDI 001611 version 0.260611.0634; session A = sub-25876/sub-25876_ses-20241111T093615_ecephys.nwb; session B = sub-25876/sub-25876_ses-20241111T235014_ecephys.nwb
+
+Session A identifier EXP05_SESSION001; 256 trials; 955 recording channels; 1743016 detections
+
+Finding 10 (units): times are stored in milliseconds
+  F10  median spacing of raw start_time values (file units)                   measured                     1000 | expected                     1000 | OK
+
+Finding 1: one stimulation volley per trial, -5 to +7 ms around registration, on an exact 1-s grid
+  F1   trials                                                                 measured                      256 | expected                      256 | OK
+  F1   trials with a detected volley                                          measured                      190 | expected                      190 | OK
+  F1   volley onset re registration, median (ms)                              measured                   -5.175 | expected                   -5.175 | OK
+  F1   volley onset re registration, earliest (ms)                            measured                   -5.475 | expected                   -5.475 | OK
+  F1   volley offset re registration, latest (ms)                             measured                    7.025 | expected                    7.025 | OK
+  F1   trial period, Theil-Sen fit (ms)                                       measured                     1000 | expected                     1000 | OK
+  F1   residuals from the 1-s grid, min/max (ms)                              measured          [-0.025, 0.025] | expected          [-0.025, 0.025] | OK
+  F1   10%-synchrony bins outside every volley window                         measured                        0 | expected                        0 | OK
+
+Finding 2: the 3.45-3.10 s window ends ~95 ms before trial n-3's volley
+  F2   window end -> onset of trial n-3's volley, median (ms)                 measured                    94.83 | expected                     94.8 | OK
+  F2   volleys inside any trial's 3.45-3.10 s window                          measured                        0 | expected                        0 | OK
+
+Finding 3: no stimulation events at 2.45, 0.90, 0.50 or 0.05 s before registration; other synchrony is evoked
+  F3   10%-synchrony bins in the session                                      measured                     2509 | expected                     2509 | OK
+  F3   ... of which within a volley window [-16, +12] ms                      measured                     2509 | expected                     2509 | OK
+  F3   10% bins within 20 ms of 2.45/0.90/0.50/0.05 s before a registration   measured                        0 | expected                        0 | OK
+  F3   5%-synchrony bins outside volley windows                               measured                      206 | expected                      206 | OK
+  F3   ... lag after the preceding volley offset, min/max (ms)                measured           [20.25, 219.2] | expected           [20.25, 219.2] | OK
+       5% bins: lag after preceding volley offset, percentiles 5/50/95 = [26.1, 58.0, 184.3] ms
+
+Finding 4: the 256-trial sequence repeats across sessions (session 1 vs session 100 of the same experiment)
+  F4   s identical (all 256 x 2)                                              measured                     True | expected                     True | OK
+  F4   o identical (all 256 x 32)                                             measured                     True | expected                     True | OK
+       (all 100 sessions of all 27 experiments, and no reuse across experiments, need all files; not checked here)
+
+Finding 7: no-observation trials are the (0,0) category
+  F7   trials with s = (0,0)                                                  measured                       66 | expected                       66 | OK
+  F7   trials with no delivered bits (o all zero)                             measured                       66 | expected                       66 | OK
+  F7   trials with no detected volley                                         measured                       66 | expected                       66 | OK
+  F7   mismatches (0,0) vs no delivered bits                                  measured                        0 | expected                        0 | OK
+  F7   mismatches (0,0) vs no volley                                          measured                        0 | expected                        0 | OK
+       (1,0): fraction of bits on, bits 1-16 = 0.753, bits 17-32 = 0.233
+       (0,1): fraction of bits on, bits 1-16 = 0.285, bits 17-32 = 0.762
+       (1,1): fraction of bits on, bits 1-16 = 1.000, bits 17-32 = 1.000
+
+Finding 8: most task-period detections are stimulation artifacts (this one session; the notes' 88.9% is pooled)
+  F8   fraction in [onset - 4 ms, offset + 3 ms]                              measured                   0.7977 | expected                   0.7977 | OK
+  F8   fraction in [onset, offset] (strict)                                   measured                   0.7575 | expected                   0.7575 | OK
+  F8   fraction in [onset - 10 ms, offset + 10 ms] (wide)                     measured                   0.8056 | expected                   0.8056 | OK
+  F8   all detections, Hz per channel                                         measured                    7.115 | expected                    7.115 | OK
+  F8   artifact-free detections, Hz per channel                               measured                    1.456 | expected                    1.456 | OK
+
+Finding 10 (label leak): registration spacing minus 1000 ms, by transition (counts)
+  F10  stim->stim  (-0.05 / 0 / +0.05 ms)                                     measured            [19, 102, 17] | expected            [19, 102, 17] | OK
+  F10  stim->catch  (-0.05 / 0 / +0.05 ms)                                    measured               [42, 9, 0] | expected               [42, 9, 0] | OK
+  F10  catch->stim  (-0.05 / 0 / +0.05 ms)                                    measured               [0, 7, 45] | expected               [0, 7, 45] | OK
+  F10  catch->catch  (-0.05 / 0 / +0.05 ms)                                   measured               [0, 14, 0] | expected               [0, 14, 0] | OK
+
+Finding 10 (DIV): subject description vs recording date, same subject (26342), two experiments
+  F10  sub-26342_ses-20241120T120430_ec                                       measured      DIV 8 on 2024-11-20 | expected      DIV 8 on 2024-11-20 | OK
+  F10  sub-26342_ses-20241127T125335_ec                                       measured     DIV 13 on 2024-11-27 | expected     DIV 13 on 2024-11-27 | OK
+       -> 7 calendar days apart but DIV advances by 5: the DIV field is inconsistent; derive age from dates
+
+Done. 'OK' = measured matches our pipeline's value for these files; 'DIFFERS' = it does not.

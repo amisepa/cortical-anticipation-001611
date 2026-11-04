@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper below."
+type: software
+title: "Code for: Can rat cortical cultures predict what comes next, unpredictable or learned?"
+authors:
+  - family-names: Cannard
+    given-names: Cedric
+    affiliation: "Swartz Center for Computational Neuroscience, UC San Diego"
+    orcid: "https://orcid.org/0000-0002-6125-1175"
+  - family-names: Reid
+    given-names: Will
+    affiliation: "Valis Corporation, Encinitas, CA, USA"
+license: GPL-3.0
+repository-code: "https://github.com/amisepa/cortical-anticipation-001611"
+references:
+  - type: generic
+    title: "Hidden-source inference task dataset (DANDI 001611)"
+    authors:
+      - name: "Mayama et al."
+    notes: "arXiv:2510.04084; DANDI 001611, DOI 10.48324/dandi.001611/0.260611.0634, CC-BY-4.0"

@@ -1,0 +1,7 @@
+(a) The analysis was frozen by a git tag at 16:19, before the held-out run started at 19:06; the GitHub push (19:15) and the OSF registration (19:51) came during the run, before any output was written (19:58) or displayed (21:13). The recordings are public and had been analyzed before, so the registration is pre-analysis for this pipeline, not pre-data.
+
+(b) Each dot is one held-out experiment (13 experiments in 9 cultures) with its 95% interval; the diamond is the pooled estimate, +0.003 (95% CI -0.026 to +0.033, p = 0.73), inside the pre-set ±0.059 band, and within the stricter ±0.03 only narrowly (equivalence uses the 90% CI, upper limit +0.027; the 95% CI drawn here reaches +0.033). Result: not detected in this dataset, and bounded.
+
+(c) The same construction for growth over 100 sessions (12 experiments in 8 cultures): pooled +0.004 (95% CI -0.006 to +0.013, p = 0.29), inside the pre-set ±0.02 band. Result: not detected in this dataset, and bounded.
+
+(d) Synthetic effects of known size were added to development-split data with permuted labels before the held-out run; the pipeline found a Q1 effect of about 0.036 (same in every experiment) or 0.063 (scaled to firing) 80% of the time, and a Q2 growth of about 0.013 or 0.050. The earlier analysis's bound (0.06 SD, about 0.017 on this scale) is narrower than our interval because it treats trials as independent, while ours accounts for experiments and cultures (Supplementary Information S2); the two numbers answer different questions.

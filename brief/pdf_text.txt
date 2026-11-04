@@ -1,0 +1,122 @@
+===== page 1 =====
+16:00 17:00 18:00 19:00 20:00 21:00
+28 October 2026, Pacific time
+held-out run (no output seen)
+sensitivity run (results unread)
+16:19
+Analysis frozen
+(git tag prereg-v1)
+19:06
+Held-out run
+started
+19:15
+Code and tag
+pushed to GitHub
+19:51
+Registered
+on OSF (nxsph)
+19:58
+First per-experiment
+output written
+20:08
+Run finished,
+summary written
+21:13
+First result
+displayed
+(a) When things happened
+timestamp on our machine
+third-party timestamp (GitHub, OSF)
+−0.15 −0.10 −0.05 0.00 0.05 0.10 0.15
+Pre-stimulus prediction of the stimulated source (AUC above the shift null)
+C01 E02
+C01 E03
+C02 E01 (sessions 0-49)
+C03 E01
+C04 E01
+C04 E02
+C04 E03
+C05 E02
+C07 E01
+C08 E01
+C09 E01
+C11 E01
+C11 E03
+Pooled (all experiments)
+±0.059: effects this small or smaller
+count as 'not meaningful' (set before the run)
+±0.03: stricter bound (secondary)
+pooled +0.003
+95% CI -0.026 to +0.033
+(b) Q1: first exposure, per experiment and pooled
+Pre-registered re-analysis of DANDI 001611: at a glance
+Cedric Cannard and Will Reid. From the saved outputs of the held-out run (28 Oct 2026). Each figure's data is attached as CSV.
+The analysis was frozen by a git tag at 16:19, before the held-out run started at 19:06; the GitHub push (19:15) and
+the OSF registration (19:51) came during the run, before any output was written (19:58) or displayed (21:13). The
+recordings are public and had been analyzed before, so the registration is pre-analysis for this pipeline, not pre-
+data.
+Each dot is one held-out experiment (13 experiments in 9 cultures) with its 95% interval; the diamond is the pooled
+estimate, +0.003 (95% CI -0.026 to +0.033, p = 0.73), inside the pre-set ±0.059 band, and within the stricter ±0.03
+only narrowly (equivalence uses the 90% CI, upper limit +0.027; the 95% CI drawn here reaches +0.033). Result: not
+detected in this dataset, and bounded.
+
+===== page 2 =====
+−0.04 −0.02 0.00 0.02 0.04
+Growth of the prediction across sessions (G above the shift null)
+C01 E02
+C01 E03
+C03 E01
+C04 E01
+C04 E02
+C04 E03
+C05 E02
+C07 E01
+C08 E01
+C09 E01
+C11 E01
+C11 E03
+Pooled (all experiments)
+±0.02: effects this small or smaller
+count as 'not meaningful' (set before the run)
+pooled +0.004
+95% CI -0.006 to +0.013
+(c) Q2: growth over 100 sessions, per experiment and pooled
+0.00 0.02 0.04 0.06 0.08 0.10 0.12
+Injected effect (Q1, pooled AUC above chance)
+0
+25%
+50%
+75%
+100%Share of test runs that detected the injected effect
+80%
+ observed: +0.003
+ the earlier analysis's reported bound (0.06 SD ≈ 0.017)
+ ±0.059: our 'not
+ meaningful' bound
+Q1: first exposure (session 1)
+same effect in every experiment
+effect scaled to each experiment's firing
+0.00 0.01 0.02 0.03 0.04 0.05 0.06
+Injected effect (Q2, pooled growth over sessions)
+0
+25%
+50%
+75%
+100%
+80%
+ observed: +0.004
+ ±0.02: our 'not meaningful' bound
+Q2: growth over 100 sessions
+The same construction for growth over 100 sessions (12 experiments in 8 cultures): pooled +0.004 (95% CI -0.006 to
++0.013, p = 0.29), inside the pre-set ±0.02 band. Result: not detected in this dataset, and bounded.
+Note: sensitivity rests on injected signals only.
+The biological positive control (Q2) was itself null and the closed-loop control was not available.
+(d) Would we have seen it? Detection of synthetic effects added to permuted-label data
+Synthetic effects of known size were added to development-split data with permuted labels before the held-out run; the
+pipeline found a Q1 effect of about 0.036 (same in every experiment) or 0.063 (scaled to firing) 80% of the time, and
+a Q2 growth of about 0.013 or 0.050. The earlier analysis's bound (0.06 SD, about 0.017 on this scale) is narrower
+than our interval because it treats trials as independent, while ours accounts for experiments and cultures
+(Supplementary Information S2); the two numbers answer different questions.
+Sources: results/D/heldout_primary/summary.json, forest_q1.csv, forest_q2.csv; results/B/B2/*power*.csv; PROVENANCE.md;
+Supplementary Information S5-S6 of the paper. Statements are limited to this dataset and this pipeline; nothing here is a
+broader claim about the preparation.

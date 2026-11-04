@@ -1,0 +1,351 @@
+{
+ "generated": "2026-11-02",
+ "by": "tools/make_brief.py",
+ "from_commit_tag": "cp4",
+ "numbers": [
+  {
+   "key": "time_1619",
+   "label": "Analysis frozen (git tag prereg-v1)",
+   "value": "2026-10-28 16:19:20 PDT",
+   "formatted": "16:19",
+   "source": "git for-each-ref refs/tags/prereg-v1",
+   "field": ""
+  },
+  {
+   "key": "time_1906",
+   "label": "Held-out run started",
+   "value": "2026-10-28 19:06:44 PDT",
+   "formatted": "19:06",
+   "source": "results/D/heldout_primary/run.log",
+   "field": ""
+  },
+  {
+   "key": "time_1915",
+   "label": "Code and tag pushed to GitHub",
+   "value": "2026-10-28 19:15:08 PDT",
+   "formatted": "19:15",
+   "source": "Supplementary Information S6",
+   "field": ""
+  },
+  {
+   "key": "time_1951",
+   "label": "Registered on OSF (nxsph)",
+   "value": "2026-10-28 19:51:00 PDT",
+   "formatted": "19:51",
+   "source": "Supplementary Information S6",
+   "field": ""
+  },
+  {
+   "key": "time_1958",
+   "label": "First per-experiment output written",
+   "value": "2026-10-28 19:58:46 PDT",
+   "formatted": "19:58",
+   "source": "Supplementary Information S6",
+   "field": ""
+  },
+  {
+   "key": "time_2008",
+   "label": "Run finished, summary written",
+   "value": "2026-10-28 20:08:13 PDT",
+   "formatted": "20:08",
+   "source": "results/D/heldout_primary/run.log",
+   "field": ""
+  },
+  {
+   "key": "time_2113",
+   "label": "First result displayed",
+   "value": "2026-10-28 21:13:29 PDT",
+   "formatted": "21:13",
+   "source": "Supplementary Information S6",
+   "field": ""
+  },
+  {
+   "key": "q1_n_units",
+   "label": "Q1 first exposure: experiments",
+   "value": 13,
+   "formatted": "13",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.n_units"
+  },
+  {
+   "key": "q1_n_cultures",
+   "label": "Q1 first exposure: cultures",
+   "value": 9,
+   "formatted": "9",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.n_cultures"
+  },
+  {
+   "key": "q1_est",
+   "label": "Q1 first exposure: pooled estimate",
+   "value": 0.00344724451844624,
+   "formatted": "+0.003",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.est"
+  },
+  {
+   "key": "q1_ci95_low",
+   "label": "Q1 first exposure: 95% CI lower",
+   "value": -0.0263328189770287,
+   "formatted": "-0.026",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.ci95[0]"
+  },
+  {
+   "key": "q1_ci95_high",
+   "label": "Q1 first exposure: 95% CI upper",
+   "value": 0.0332273080139211,
+   "formatted": "+0.033",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.ci95[1]"
+  },
+  {
+   "key": "q1_ci90_low",
+   "label": "Q1 first exposure: 90% CI lower (equivalence test)",
+   "value": -0.0205672217980475,
+   "formatted": "-0.021",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.ci90[0]"
+  },
+  {
+   "key": "q1_ci90_high",
+   "label": "Q1 first exposure: 90% CI upper (equivalence test)",
+   "value": 0.02746171083494,
+   "formatted": "+0.027",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.ci90[1]"
+  },
+  {
+   "key": "q1_p_rand",
+   "label": "Q1 first exposure: randomization p",
+   "value": 0.726663331665833,
+   "formatted": "0.73",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.randomization_p"
+  },
+  {
+   "key": "q1_outcome",
+   "label": "Q1 first exposure: outcome under the registered rule",
+   "value": "A: bounded null (equivalence at +-0.059)",
+   "formatted": "A: bounded null (equivalence at +-0.059)",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.outcome"
+  },
+  {
+   "key": "q2_n_units",
+   "label": "Q2 growth over 100 sessions: experiments",
+   "value": 12,
+   "formatted": "12",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.n_units"
+  },
+  {
+   "key": "q2_n_cultures",
+   "label": "Q2 growth over 100 sessions: cultures",
+   "value": 8,
+   "formatted": "8",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.n_cultures"
+  },
+  {
+   "key": "q2_est",
+   "label": "Q2 growth over 100 sessions: pooled estimate",
+   "value": 0.00358034138756831,
+   "formatted": "+0.004",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.est"
+  },
+  {
+   "key": "q2_ci95_low",
+   "label": "Q2 growth over 100 sessions: 95% CI lower",
+   "value": -0.00633594433016917,
+   "formatted": "-0.006",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.ci95[0]"
+  },
+  {
+   "key": "q2_ci95_high",
+   "label": "Q2 growth over 100 sessions: 95% CI upper",
+   "value": 0.0134966271053058,
+   "formatted": "+0.013",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.ci95[1]"
+  },
+  {
+   "key": "q2_ci90_low",
+   "label": "Q2 growth over 100 sessions: 90% CI lower (equivalence test)",
+   "value": -0.00436476141264623,
+   "formatted": "-0.004",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.ci90[0]"
+  },
+  {
+   "key": "q2_ci90_high",
+   "label": "Q2 growth over 100 sessions: 90% CI upper (equivalence test)",
+   "value": 0.0115254441877828,
+   "formatted": "+0.012",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.ci90[1]"
+  },
+  {
+   "key": "q2_p_rand",
+   "label": "Q2 growth over 100 sessions: randomization p",
+   "value": 0.2870870870870871,
+   "formatted": "0.29",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.randomization_p"
+  },
+  {
+   "key": "q2_outcome",
+   "label": "Q2 growth over 100 sessions: outcome under the registered rule",
+   "value": "A: bounded null (equivalence at +-0.02)",
+   "formatted": "A: bounded null (equivalence at +-0.02)",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.outcome"
+  },
+  {
+   "key": "sesoi_q1",
+   "label": "Q1 equivalence bound",
+   "value": 0.059,
+   "formatted": "0.059",
+   "source": "docs/preregistration_values.json",
+   "field": "SESOI_Q1"
+  },
+  {
+   "key": "sesoi_q1_secondary",
+   "label": "Q1 secondary (stricter) bound",
+   "value": 0.03,
+   "formatted": "0.03",
+   "source": "docs/preregistration_values.json",
+   "field": "SESOI_Q1_SECONDARY"
+  },
+  {
+   "key": "sesoi_q2",
+   "label": "Q2 equivalence bound",
+   "value": 0.02,
+   "formatted": "0.02",
+   "source": "docs/preregistration_values.json",
+   "field": "SESOI_Q2"
+  },
+  {
+   "key": "q1_tost_equivalent",
+   "label": "Q1 TOST at the registered bound",
+   "value": true,
+   "formatted": "equivalent at ±0.059",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.tost_equivalent"
+  },
+  {
+   "key": "q1_tost_secondary_equivalent",
+   "label": "Q1 TOST at the secondary bound",
+   "value": true,
+   "formatted": "equivalent at ±0.03",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q1.PRIMARY.tost_secondary_0.03_equivalent"
+  },
+  {
+   "key": "q2_tost_equivalent",
+   "label": "Q2 TOST at the registered bound",
+   "value": true,
+   "formatted": "equivalent at ±0.02",
+   "source": "results/D/heldout_primary/summary.json",
+   "field": "Q2.PRIMARY.tost_equivalent"
+  },
+  {
+   "key": "mde80_q1_homog_ho9",
+   "label": "Q1: effect found 80% of the time, same in every experiment, 9-culture design",
+   "value": 0.036274313834936,
+   "formatted": "0.036",
+   "source": "results/B/B2/q1_homog_mde80.csv",
+   "field": "design ho9, mde80_est"
+  },
+  {
+   "key": "mde80_q1_inject_ho9",
+   "label": "Q1: effect found 80% of the time, injection scaled to firing",
+   "value": 0.0634089995087653,
+   "formatted": "0.063",
+   "source": "results/B/B2/q1_mde80.csv",
+   "field": "design ho9, subset all, scenario both, mde80_est"
+  },
+  {
+   "key": "mde80_q2_homog",
+   "label": "Q2: growth found 80% of the time, same in every experiment",
+   "value": 0.0132975068500696,
+   "formatted": "0.013",
+   "source": "results/B/B2/q2_homog_mde80.csv",
+   "field": "mde80_est"
+  },
+  {
+   "key": "mde80_q2_inject",
+   "label": "Q2: growth found 80% of the time, ramp injection scaled to firing",
+   "value": 0.0498857882116329,
+   "formatted": "0.050",
+   "source": "results/B/B2/q2_mde80.csv",
+   "field": "subset all, scenario both_ramp, mde80_est"
+  },
+  {
+   "key": "earlier_bound_sd",
+   "label": "the earlier analysis's claimed bound, in SD units",
+   "value": 0.06,
+   "formatted": "0.06 SD",
+   "source": "the earlier analysis",
+   "field": "its reported bound, \"95% CI within 0.06 SD\""
+  },
+  {
+   "key": "earlier_bound_dauc",
+   "label": "the earlier analysis's claimed bound converted to delta-AUC",
+   "value": 0.01692061117086774,
+   "formatted": "0.017",
+   "source": "tools/make_brief.py",
+   "field": "EARLIER_BOUND = Phi(0.06 / sqrt 2) - 0.5 (binormal AUC)"
+  },
+  {
+   "key": "verify_script_seconds",
+   "label": "Verification script runtime, seconds (about)",
+   "value": 20,
+   "formatted": "20",
+   "source": "tools/verify_earlier_findings.py",
+   "field": "runtime, about 20 s to 3 min"
+  },
+  {
+   "key": "q1_power_curves",
+   "label": "Q1 detection curves in figure (d)",
+   "value": "results/B/B2/q1_homog_power.csv (ho9), q1_power.csv (ho9, all, both)",
+   "formatted": "",
+   "source": "results/B/B2/",
+   "field": "mean_est vs power"
+  },
+  {
+   "key": "q2_power_curves",
+   "label": "Q2 detection curves in figure (d)",
+   "value": "results/B/B2/q2_homog_power.csv (full), q2_power.csv (full, all, both_ramp)",
+   "formatted": "",
+   "source": "results/B/B2/",
+   "field": "mean_est vs power"
+  },
+  {
+   "key": "dandi_version",
+   "label": "DANDI 001611 version analyzed",
+   "value": "0.260611.0634",
+   "formatted": "0.260611.0634",
+   "source": "data/manifests/d001611.assets.tsv; scripts/B0_download_001611.py",
+   "field": "VERSION"
+  },
+  {
+   "key": "dandi_size_gb",
+   "label": "Size of all 2,700 files",
+   "value": 39.93,
+   "formatted": "40 GB",
+   "source": "data/manifests/d001611.assets.tsv",
+   "field": "sum of size (39,929,261,136 bytes)"
+  },
+  {
+   "key": "heldout_size_gb",
+   "label": "Size of the held-out sessions",
+   "value": 21.9,
+   "formatted": "22 GB",
+   "source": "data/manifests/d001611_index.csv + split.csv",
+   "field": "sum of size over held-out experiments (1,500 sessions)"
+  }
+ ]
+}
