@@ -10,6 +10,7 @@ authors:
   - family-names: Reid
     given-names: Will
     affiliation: "Valis Corporation, Encinitas, CA, USA"
+    orcid: "https://orcid.org/0009-0002-7024-3983"
 license: GPL-3.0
 repository-code: "https://github.com/amisepa/cortical-anticipation-001611"
 references:
