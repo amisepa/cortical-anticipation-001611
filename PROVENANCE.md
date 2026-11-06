@@ -70,9 +70,9 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 |---|---|---|
 | `.gitattributes` | added at the public release (not in the tag tree); disables line-ending conversion so the frozen files stay byte-identical | `fa1385d99a319b43c06f5309d1aae9fdd3adea46` |
 | `.gitignore` | post-freeze edit (differs from the tag version) | `01a24d58d920384b39f1776a009b460bfb3488cd` |
-| `CITATION.cff` | added at the public release (not in the tag tree) | `bf0c15973a311d32a5bb115033ce829d274d5b86` |
+| `CITATION.cff` | added at the public release (not in the tag tree) | `2a6b4ebf3ea7855156c8e731a220e52c1ea4e187` |
 | `LICENSE` | added at the public release (not in the tag tree) | `f288702d2fa16d3cdf0035b15a9fcbc552cd88e7` |
-| `README.md` | post-freeze edit (differs from the tag version) | `758fd1734eef6211898ae55d88dd6fc84a7c91f9` |
+| `README.md` | post-freeze edit (differs from the tag version) | `622135dc493c3fb9c7209cc67fc8af2ef3e5648a` |
 | `VERIFICATION.md` | post-freeze (not in the tag tree) | `8c3c393f0a1b53d2bf4ddac73a632b287016729a` |
 | `brief/a_timeline.csv` | post-freeze (not in the tag tree) | `6fbb3fa406b4285e0eb7d54e263593b09148e751` |
 | `brief/a_timeline.png` | post-freeze (not in the tag tree) | `180e68a15b896f77119391b6d7dd6d7c40a8722f` |
