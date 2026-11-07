@@ -70,13 +70,13 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 |---|---|---|
 | `.gitattributes` | added at the public release (not in the tag tree); disables line-ending conversion so the frozen files stay byte-identical | `fa1385d99a319b43c06f5309d1aae9fdd3adea46` |
 | `.gitignore` | post-freeze edit (differs from the tag version) | `01a24d58d920384b39f1776a009b460bfb3488cd` |
-| `CITATION.cff` | added at the public release (not in the tag tree) | `2a6b4ebf3ea7855156c8e731a220e52c1ea4e187` |
+| `CITATION.cff` | added at the public release (not in the tag tree) | `da30636414b37d6ce53c544dedb2c12e9c2f6b25` |
 | `LICENSE` | added at the public release (not in the tag tree) | `f288702d2fa16d3cdf0035b15a9fcbc552cd88e7` |
-| `README.md` | post-freeze edit (differs from the tag version) | `622135dc493c3fb9c7209cc67fc8af2ef3e5648a` |
+| `README.md` | post-freeze edit (differs from the tag version) | `a32c2cc43b59954c52fe73f58c36ee55f5e86c23` |
 | `VERIFICATION.md` | post-freeze (not in the tag tree) | `8c3c393f0a1b53d2bf4ddac73a632b287016729a` |
 | `brief/a_timeline.csv` | post-freeze (not in the tag tree) | `6fbb3fa406b4285e0eb7d54e263593b09148e751` |
 | `brief/a_timeline.png` | post-freeze (not in the tag tree) | `180e68a15b896f77119391b6d7dd6d7c40a8722f` |
-| `brief/at_a_glance.pdf` | post-freeze (not in the tag tree) | `f5dc1d3196d7a1d3049d77af1b0409fae44fb6c6` |
+| `brief/at_a_glance.pdf` | post-freeze (not in the tag tree) | `c01891f0cedb557fddee12ac127522846c4b18ed` |
 | `brief/b_q1_forest.csv` | post-freeze (not in the tag tree) | `f13ef945a47db64ff53a31df369bc3c9af1dfc81` |
 | `brief/b_q1_forest.png` | post-freeze (not in the tag tree) | `03728cb43e031cd43194dc91a473dfe112b8d693` |
 | `brief/c_q2_forest.csv` | post-freeze (not in the tag tree) | `0228d8b975f23b9d56e27c98451457405364004b` |
@@ -84,7 +84,7 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `brief/d_detection_vs_effect.csv` | post-freeze (not in the tag tree) | `7714ee5e5cf92e5b96f1372f6a62c0771f4a8d26` |
 | `brief/d_detection_vs_effect.png` | post-freeze (not in the tag tree) | `fe35c948531769d08f96198e5d74c7598b3c94e7` |
 | `brief/paragraphs.txt` | post-freeze (not in the tag tree) | `dd5023987bbcd75267eeb22a1c3e1c7fbb7f641a` |
-| `brief/pdf_text.txt` | post-freeze (not in the tag tree) | `ea36d88a15e087d03115e2e1992bf44f495d2a3b` |
+| `brief/pdf_text.txt` | post-freeze (not in the tag tree) | `53ee16fb10fd6329cc12f048b62a4c59df27c230` |
 | `brief/results.json` | post-freeze (not in the tag tree) | `e74e3ed1d0187678bdf5e8c787c6993bb14e5afe` |
 | `check_hashes.py` | post-freeze (not in the tag tree) | `63d25f2472ebf1071f1bd46603551320367385a1` |
 | `data/manifests/d001611.assets.tsv` | post-freeze (not in the tag tree); CRLF line endings converted to LF for this repository (content otherwise as at tag `cp4`; not in the hash-checked set) | `7c9d79217087dc76d76e47788742cfa774caaa2f` |
@@ -142,7 +142,7 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `tests/test_d001611_reader.py` | identical to the tag | `f8a1864a5081545ce80dfa3d31b572acd4760b9a` |
 | `tests/test_pipeline.py` | identical to the tag | `03a68aab4ec5b2940504958496f536787da13a74` |
 | `tests/test_seed.py` | identical to the tag | `e97251001505dea920336271467bdd016a998800` |
-| `tools/make_brief.py` | post-freeze (not in the tag tree) | `d3e0d3b20198389ab24284b94229152b94f7a0de` |
+| `tools/make_brief.py` | post-freeze (not in the tag tree) | `ec298ac7d62d0cc56050022e9ef7f8e78155e828` |
 | `tools/verify_earlier_findings.py` | post-freeze (not in the tag tree) | `21191d75a2119cdbec900510507f1ee14cad9b6f` |
 | `tools/verify_earlier_findings_expected.txt` | post-freeze (not in the tag tree) | `dc1c990c11136b5c0f6966ebe4c1235c20a9c3b1` |
 | `tools/verify_earlier_findings_expected_values.json` | post-freeze (not in the tag tree) | `a5cdf1b808374e1ec11fd524a81c79b642117c93` |

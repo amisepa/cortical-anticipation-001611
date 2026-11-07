@@ -315,7 +315,7 @@ _args = _ap.parse_known_args()[0]; PREVIEW = _args.preview
 with PdfPages(OUT / "at_a_glance.pdf") as pdf:
     fig = plt.figure(figsize=(8.5, 11))
     fig.text(0.07, 0.965, "Pre-registered re-analysis of DANDI 001611: at a glance", fontsize=14, fontweight="bold", color=INK, va="top")
-    fig.text(0.07, 0.942, "Cedric Cannard and Will Reid. From the saved outputs of the held-out run (28 Oct 2026). Each figure's data is attached as CSV.",
+    fig.text(0.07, 0.942, "Cedric Cannard and William Reid. From the saved outputs of the held-out run (28 Oct 2026). Each figure's data is attached as CSV.",
              fontsize=8.8, color=INK2, va="top")
     draw_timeline(fig, fig.add_gridspec(1, 1, left=0.05, right=0.96, top=0.905, bottom=0.60)[0])
     put_text(fig, 0.555, PAR["a"])

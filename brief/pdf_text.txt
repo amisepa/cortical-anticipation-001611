@@ -50,7 +50,7 @@ pooled +0.003
 95% CI -0.026 to +0.033
 (b) Q1: first exposure, per experiment and pooled
 Pre-registered re-analysis of DANDI 001611: at a glance
-Cedric Cannard and Will Reid. From the saved outputs of the held-out run (28 Oct 2026). Each figure's data is attached as CSV.
+Cedric Cannard and William Reid. From the saved outputs of the held-out run (28 Oct 2026). Each figure's data is attached as CSV.
 The analysis was frozen by a git tag at 16:19, before the held-out run started at 19:06; the GitHub push (19:15) and
 the OSF registration (19:51) came during the run, before any output was written (19:58) or displayed (21:13). The
 recordings are public and had been analyzed before, so the registration is pre-analysis for this pipeline, not pre-

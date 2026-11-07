@@ -2,7 +2,7 @@
 
 **Re-analysis code for the confirmatory study of DANDI dataset 001611 (questions Q1 and Q2).**
 
-Cedric Cannard (Swartz Center for Computational Neuroscience, UC San Diego; Valis Corporation, Encinitas, CA, USA) and Will Reid (Valis Corporation, Encinitas, CA, USA).
+Cedric Cannard (Swartz Center for Computational Neuroscience, UC San Diego; Valis Corporation, Encinitas, CA, USA) and William Reid (Valis Corporation, Encinitas, CA, USA).
 
 The accompanying manuscript is under submission. This repository contains the analysis code, the frozen pre-analysis plan, the split and session manifests, the saved outputs of the confirmatory run, the figures, and a verification script. **It contains no recordings.** Nothing in it needs to be run to read the results. `VERIFICATION.md` lists every claim in the paper with its source file and how to check it.
 
@@ -107,7 +107,7 @@ All data are public: the main dataset is DANDI 001611 (version 0.260611.0634, DO
 
 ## License
 
-Code: GPL-3.0 (see LICENSE). Copyright 2026 Cedric Cannard and Will Reid. The registered plan text and figures are CC-BY-4.0.
+Code: GPL-3.0 (see LICENSE). Copyright 2026 Cedric Cannard and William Reid. The registered plan text and figures are CC-BY-4.0.
 
 ## How to cite
 
