@@ -42,6 +42,9 @@ source file and field.
 | C18 | The earlier analysis's "95% CI within 0.06 SD" corresponds to about ΔAUC 0.017 | 0.0169 | `tools/make_brief.py` (`EARLIER_BOUND`): Φ(0.06/√2) − 0.5, binormal AUC; the 0.06 SD bound is the one the earlier analysis reported | Recompute with scipy: `norm.cdf(0.06/2**0.5) - 0.5` |
 | C19 | Why the earlier analysis's bound is narrower than our interval | it pools sessions as independent trials; our interval nests experiments in cultures and the 100 sessions of an experiment share one 256-trial sequence | Supplementary Information S2, item 1 (one 256-trial sequence per experiment, identical in all 100 sessions); check F4 of `tools/verify_earlier_findings.py` | Compare the `s` column of `/intervals/trials` across sessions of one experiment (the verification script does this for one experiment) |
 | C20 | DANDI 001611: 2,700 files, 39.9 GB; held-out sessions about 22 GB | as listed | `data/manifests/d001611.assets.tsv` (`size`), `d001611_index.csv` + `split.csv` | Sum the `size` column |
+| C21 | Pre-task and matched-task autocorrelation at a 1-s lag | −0.018 before task onset; +0.353 in matched task segments; 2,700 sessions, 12 cultures | `posthoc/output/summary.json` (`pretask`), `pretask_by_culture.csv` | Regenerate with `posthoc/pretask_cadence_audit.py`, then `summarize_controls.py` |
+| C22 | Late response at 600-900 ms versus the evoked response at 100-200 ms | stimulated-minus-no-observation late difference: median 0.02 spikes/s/channel, range −0.25 to +0.64; median evoked rate 5.83 | `posthoc/output/summary.json` (`recovery`), `recovery_by_culture.csv` | Regenerate with `posthoc/response_recovery_depression.py`, then `summarize_controls.py` |
+| C23 | Within-session response depression | second-half/first-half ratio: median 0.54, range 0.15-1.07; lower in 25 of 27 experiments | `posthoc/output/summary.json` (`within_session_response_depression`), `depression_by_experiment.csv` | As C22; ratios are computed within stimulus category before aggregation |
 
 Values for the audit findings (the earlier, non-registered analysis of the same deposit) checked by `tools/verify_earlier_findings.py` (one volley per trial on a 1-s grid, the
 3.45–3.10 s window sits before trial n−3, fixed sequences, (0,0) no-observation trials, artifact fractions, millisecond
@@ -88,3 +91,6 @@ timestamps, DIV) are in that script's header and in `tools/verify_earlier_findin
 - **The guard needs a local git tag** `prereg-v1`, which this repository's history does not carry (see README.md). `check_hashes.py` is the provenance check.
 - **What this is not:** a claim about the preparation in general, about other datasets, or about the earlier analysis
   beyond the data findings summarized in Supplementary Information S2. Statements are limited to this dataset and this pipeline.
+- **Post-hoc controls (C21-C23) are descriptive, not part of the registered Q1/Q2 tests.** The fixed 1-s design can
+  show whether late activity resembles no-observation trials and whether the response declines within a session; it
+  cannot identify a recovery time constant or separate adaptation from other causes of depression. See `posthoc/README.md`.

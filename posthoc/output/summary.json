@@ -1,0 +1,34 @@
+{
+  "analysis_status": "post-hoc descriptive controls; not part of the registered Q1/Q2 tests",
+  "pretask": {
+    "sessions": 2700,
+    "cultures": 12,
+    "duration_seconds_median": 3.19,
+    "duration_seconds_range": [
+      2.72,
+      4.1
+    ],
+    "pretask_spikes_per_session_median": 680.0,
+    "sessions_with_at_least_20_pretask_spikes": 2700,
+    "autocorrelation_1s_pretask_culture_mean": -0.017776812327750795,
+    "autocorrelation_1s_task_culture_mean": 0.35337569601658386
+  },
+  "recovery": {
+    "cultures": 12,
+    "late_stimulated_minus_no_observation_hz_per_channel_median": 0.02046610616379132,
+    "late_difference_range": [
+      -0.24590547592724216,
+      0.6410710278512539
+    ],
+    "evoked_100_200_hz_per_channel_median": 5.834093531194027
+  },
+  "within_session_response_depression": {
+    "experiments": 27,
+    "second_half_over_first_half_median": 0.5401723675664839,
+    "ratio_range": [
+      0.150127886387169,
+      1.0741488130211272
+    ],
+    "experiments_with_second_half_lower": 25
+  }
+}

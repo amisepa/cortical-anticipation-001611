@@ -30,6 +30,7 @@ The accompanying manuscript is under submission. This repository contains the an
 | `tests/` | Unit tests (`pytest -q`) |
 | `environment.yml`, `environment.lock.yml` | Conda environment. The lock file is the registered one, byte for byte (its last line is the authoring machine's conda `prefix:`; conda ignores it on another machine) |
 | `check_hashes.py` | Compares every frozen file in this repository with the SHA-256 recorded in `results/D/heldout_primary/summary.json` |
+| `posthoc/` | Post-hoc internal controls: pre-task timing, response recovery and within-session response depression; scripts plus reported JSON/CSV summaries. Not part of the frozen Q1/Q2 pipeline |
 
 ## Reading the results without running anything
 
@@ -103,7 +104,7 @@ python tools/make_brief.py          # reads results/D and results/B/B2; writes b
 
 ## Data
 
-All data are public: the main dataset is DANDI 001611 (version 0.260611.0634, DOI 10.48324/dandi.001611/0.260611.0634, CC-BY-4.0), the hidden-source inference experiments of Mayama et al. (arXiv:2510.04084). Calibration datasets used in the paper: DANDI 001336, 001850, 001374 and 001872. Download and hash-verification: `scripts/B0_download_001611.py`.
+All analyzed data are public: DANDI 001611 (version 0.260611.0634, DOI 10.48324/dandi.001611/0.260611.0634, CC-BY-4.0), the hidden-source inference experiments of Mayama et al. (arXiv:2510.04084). Download and hash-verification: `scripts/B0_download_001611.py`.
 
 ## License
 
