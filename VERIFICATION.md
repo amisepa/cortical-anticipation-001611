@@ -40,7 +40,7 @@ source file and field.
 | C16 | Timeline: tag 16:19:20, run 19:06:44–20:08:13, push 19:15, OSF 19:51, first output 19:58:46, first display 21:13:29 (PDT, 2026-10-28) | as listed | `brief/a_timeline.csv` (one source per row); `results/D/heldout_primary/run.log` first and last lines; the tag and push times come from the repository's git metadata, which is not in this snapshot | The run log lines are checkable here. The tag time is visible on request (`git for-each-ref refs/tags/prereg-v1`) and the OSF time on osf.io/nxsph once the embargo lifts |
 | C17 | Injection sensitivity: Q1 effect found 80% of the time at ΔAUC 0.036 (same effect in every experiment, 9-culture design) or 0.063 (scaled to firing); Q2 at ΔG 0.013 or 0.050 | as listed | `results/B/B2/q1_homog_mde80.csv` (ho9), `q1_mde80.csv` (ho9, all, both), `q2_homog_mde80.csv`, `q2_mde80.csv` (all, both_ramp); curves in `*_power.csv` | Open the CSVs; `brief/d_detection_vs_effect.csv` is the plotted subset |
 | C18 | The earlier analysis's "95% CI within 0.06 SD" corresponds to about ΔAUC 0.017 | 0.0169 | `tools/make_brief.py` (`EARLIER_BOUND`): Φ(0.06/√2) − 0.5, binormal AUC; the 0.06 SD bound is the one the earlier analysis reported | Recompute with scipy: `norm.cdf(0.06/2**0.5) - 0.5` |
-| C19 | Why the earlier analysis's bound is narrower than our interval | it pools sessions as independent trials; our interval nests experiments in cultures and the 100 sessions of an experiment share one 256-trial sequence | Supplementary Information S2, item 1 (one 256-trial sequence per experiment, identical in all 100 sessions); check F4 of `tools/verify_earlier_findings.py` | Compare the `s` column of `/intervals/trials` across sessions of one experiment (the verification script does this for one experiment) |
+| C19 | Why the earlier analysis's bound is narrower than our interval | it pools sessions as independent trials; our interval nests experiments in cultures and the 100 sessions of an experiment share one 256-trial sequence | Supplemental Methods S1.2, item 1 (one 256-trial sequence per experiment, identical in all 100 sessions); check F4 of `tools/verify_earlier_findings.py` | Compare the `s` column of `/intervals/trials` across sessions of one experiment (the verification script does this for one experiment) |
 | C20 | DANDI 001611: 2,700 files, 39.9 GB; held-out sessions about 22 GB | as listed | `data/manifests/d001611.assets.tsv` (`size`), `d001611_index.csv` + `split.csv` | Sum the `size` column |
 | C21 | Pre-task and matched-task autocorrelation at a 1-s lag | −0.018 before task onset; +0.353 in matched task segments; 2,700 sessions, 12 cultures | `posthoc/output/summary.json` (`pretask`), `pretask_by_culture.csv` | Regenerate with `posthoc/pretask_cadence_audit.py`, then `summarize_controls.py` |
 | C22 | Late response at 600-900 ms versus the evoked response at 100-200 ms | stimulated-minus-no-observation late difference: median 0.02 spikes/s/channel, range −0.25 to +0.64; median evoked rate 5.83 | `posthoc/output/summary.json` (`recovery`), `recovery_by_culture.csv` | Regenerate with `posthoc/response_recovery_depression.py`, then `summarize_controls.py` |
@@ -59,7 +59,7 @@ timestamps, DIV) are in that script's header and in `tools/verify_earlier_findin
    - confirmatory run `--split heldout --i-have-cp2-signoff` → `results/D/heldout_primary/summary.json` with the values C1–C10 above. Randomization p-values use seeded draws and should reproduce exactly on the same library versions; REML estimates should agree to the printed precision.
    The guard needs a local git tag (README.md, "The guard"); the hash checks (2) and (3) of the guard pass on this repository as shipped.
 
-## 4. Flags and limitations (all also reported in the paper's Supplementary Information)
+## 4. Flags and limitations (all also reported in the paper's Supplemental Information)
 
 - **Sensitivity rests on injected signals only.** The biological positive control (Q2) was itself null, and the
   closed-loop positive control (spec 8.7) could not be built because DANDI 001132 has no stimulation tables. The
@@ -90,7 +90,7 @@ timestamps, DIV) are in that script's header and in `tools/verify_earlier_findin
 - **The OSF registration is embargoed** during peer review and is made public at acceptance.
 - **The guard needs a local git tag** `prereg-v1`, which this repository's history does not carry (see README.md). `check_hashes.py` is the provenance check.
 - **What this is not:** a claim about the preparation in general, about other datasets, or about the earlier analysis
-  beyond the data findings summarized in Supplementary Information S2. Statements are limited to this dataset and this pipeline.
+  beyond the data findings summarized in Supplemental Methods S1.2. Statements are limited to this dataset and this pipeline.
 - **Post-hoc controls (C21-C23) are descriptive, not part of the registered Q1/Q2 tests.** The fixed 1-s design can
   show whether late activity resembles no-observation trials and whether the response declines within a session; it
   cannot identify a recovery time constant or separate adaptation from other causes of depression. See `posthoc/README.md`.

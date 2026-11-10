@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Verify the data findings of the audit of the earlier analysis against DANDI 001611, streaming (no bulk download).
-Findings are numbered as in the audit (1-4, 7, 8 and 10); Supplementary Information S2 of the paper summarizes them.
+Findings are numbered as in the audit (1-4, 7, 8 and 10); Methods S1.2 of the paper's Supplemental Information summarizes them.
 
 What it reads (DANDI 001611, version 0.260611.0634, streamed with remfile; nothing is written to disk):
   * Session A, full (trials + spikes): sub-25876/sub-25876_ses-20241111T093615_ecephys.nwb

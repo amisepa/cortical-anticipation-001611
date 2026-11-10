@@ -116,7 +116,7 @@ Synthetic effects of known size were added to development-split data with permut
 pipeline found a Q1 effect of about 0.036 (same in every experiment) or 0.063 (scaled to firing) 80% of the time, and
 a Q2 growth of about 0.013 or 0.050. The earlier analysis's bound (0.06 SD, about 0.017 on this scale) is narrower
 than our interval because it treats trials as independent, while ours accounts for experiments and cultures
-(Supplementary Information S2); the two numbers answer different questions.
-Sources: results/D/heldout_primary/summary.json, forest_q1.csv, forest_q2.csv; results/B/B2/*power*.csv; PROVENANCE.md;
-Supplementary Information S5-S6 of the paper. Statements are limited to this dataset and this pipeline; nothing here is a
-broader claim about the preparation.
+(Supplemental Methods S1.2); the two numbers answer different questions.
+Sources: results/D/heldout_primary/summary.json, forest_q1.csv, forest_q2.csv; results/B/B2/*power*.csv; PROVENANCE.md; the
+paper's Supplemental Information (tables S5 and S6). Statements are limited to this dataset and this pipeline; nothing here
+is a broader claim about the preparation.

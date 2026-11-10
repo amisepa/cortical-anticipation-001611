@@ -4,7 +4,7 @@ Saved outputs only. Nothing here reads recordings or recomputes any held-out sta
 Inputs
   results/D/heldout_primary/summary.json, forest_q1.csv, forest_q2.csv   (held-out run, 2026-10-28)
   results/B/B2/q1_power.csv, q1_homog_power.csv, q2_power.csv, q2_homog_power.csv  (injection power, dev split, permuted labels)
-  PROVENANCE.md and Supplementary Information S6 of the paper (timeline; the run start/end are re-read from run.log here)
+  PROVENANCE.md and Table S6 of the paper's Supplemental Information (timeline; the run start/end are re-read from run.log here)
 Also writes results.json (every number the brief cites, each with its source file; one copy in brief/, one at the top
 level) and pdf_text.txt.
 Usage: python tools/make_brief.py [--preview DIR] [--check TEXT.md]
@@ -61,7 +61,7 @@ assert Q1["outcome"].startswith("A") and Q2["outcome"].startswith("A")
 assert Q1["tost_equivalent"] and Q1["tost_secondary_0.03_equivalent"] and Q2["tost_equivalent"]
 
 # ----------------------------------------------------------------------------------------------------------------------
-# (a) Timeline. Times from PROVENANCE.md and Supplementary Information S6; tag time and run start/end re-read here.
+# (a) Timeline. Times from PROVENANCE.md and Supplemental Table S6; tag time and run start/end re-read here.
 def git(*a):
     return subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True).stdout.strip()
 
@@ -80,11 +80,11 @@ def T(h, m, s=0):
 EVENTS = [  # (time, label, where, source)
     (T(16, 19, 20), "Analysis frozen\n(git tag prereg-v1)", "our machine", "git for-each-ref refs/tags/prereg-v1"),
     (T(19, 6, 44), "Held-out run\nstarted", "our machine", "results/D/heldout_primary/run.log, first line"),
-    (T(19, 15, 8), "Code and tag\npushed to GitHub", "third party", "Supplementary Information S6 (.git reflog, update by push)"),
-    (T(19, 51, 0), "Registered\non OSF (nxsph)", "third party", "Supplementary Information S6 (OSF display time, PDT)"),
-    (T(19, 58, 46), "First per-experiment\noutput written", "our machine", "Supplementary Information S6 (file birth time of units.csv)"),
+    (T(19, 15, 8), "Code and tag\npushed to GitHub", "third party", "Supplemental Table S6 (.git reflog, update by push)"),
+    (T(19, 51, 0), "Registered\non OSF (nxsph)", "third party", "Supplemental Table S6 (OSF display time, PDT)"),
+    (T(19, 58, 46), "First per-experiment\noutput written", "our machine", "Supplemental Table S6 (file birth time of units.csv)"),
     (T(20, 8, 13), "Run finished,\nsummary written", "our machine", "results/D/heldout_primary/run.log, last line"),
-    (T(21, 13, 29), "First result\ndisplayed", "our machine", "Supplementary Information S6 (session log; summary.json access time 21:13:34)"),
+    (T(21, 13, 29), "First result\ndisplayed", "our machine", "Supplemental Table S6 (session log; summary.json access time 21:13:34)"),
 ]
 pd.DataFrame([dict(time_pdt=t.strftime("%Y-%m-%d %H:%M:%S"), event=l.replace("\n", " "), where=w, source=s)
               for t, l, w, s in EVENTS]).to_csv(OUT / "a_timeline.csv", index=False, lineterminator="\n")
@@ -256,7 +256,7 @@ PAR = {
  "d": (f"Synthetic effects of known size were added to development-split data with permuted labels before the held-out run; the pipeline "
        f"found a Q1 effect of about {MDE['q1_h']:.3f} (same in every experiment) or {MDE['q1_i']:.3f} (scaled to firing) 80% of the time, and a Q2 "
        f"growth of about {MDE['q2_h']:.3f} or {MDE['q2_i']:.3f}. The earlier analysis's bound (0.06 SD, about {EARLIER_BOUND:.3f} on this scale) is narrower than our interval "
-       f"because it treats trials as independent, while ours accounts for experiments and cultures (Supplementary Information S2); the two numbers answer different questions."),
+       f"because it treats trials as independent, while ours accounts for experiments and cultures (Supplemental Methods S1.2); the two numbers answer different questions."),
 }
 
 # results.json: every number the brief cites, with its source.
@@ -330,7 +330,7 @@ with PdfPages(OUT / "at_a_glance.pdf") as pdf:
     put_text(fig, 0.625, PAR["c"])
     draw_detection(fig, fig.add_gridspec(1, 1, left=0.09, right=0.96, top=0.47, bottom=0.26)[0])
     put_text(fig, 0.165, PAR["d"])
-    fig.text(0.07, 0.045, textwrap.fill("Sources: results/D/heldout_primary/summary.json, forest_q1.csv, forest_q2.csv; results/B/B2/*power*.csv; PROVENANCE.md; Supplementary Information S5-S6 of the paper. "
+    fig.text(0.07, 0.045, textwrap.fill("Sources: results/D/heldout_primary/summary.json, forest_q1.csv, forest_q2.csv; results/B/B2/*power*.csv; PROVENANCE.md; the paper's Supplemental Information (tables S5 and S6). "
              "Statements are limited to this dataset and this pipeline; nothing here is a broader claim about the preparation.", 125), fontsize=7.8, color=MUTED, va="top")
     pdf.savefig(fig)
     if PREVIEW: fig.savefig(Path(PREVIEW) / "page2.png", dpi=110)

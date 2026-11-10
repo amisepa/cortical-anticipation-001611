@@ -1,8 +1,8 @@
 time_pdt,event,where,source
 2026-10-28 16:19:20,Analysis frozen (git tag prereg-v1),our machine,git for-each-ref refs/tags/prereg-v1
 2026-10-28 19:06:44,Held-out run started,our machine,"results/D/heldout_primary/run.log, first line"
-2026-10-28 19:15:08,Code and tag pushed to GitHub,third party,"Supplementary Information S6 (.git reflog, update by push)"
-2026-10-28 19:51:00,Registered on OSF (nxsph),third party,"Supplementary Information S6 (OSF display time, PDT)"
-2026-10-28 19:58:46,First per-experiment output written,our machine,Supplementary Information S6 (file birth time of units.csv)
+2026-10-28 19:15:08,Code and tag pushed to GitHub,third party,"Supplemental Table S6 (.git reflog, update by push)"
+2026-10-28 19:51:00,Registered on OSF (nxsph),third party,"Supplemental Table S6 (OSF display time, PDT)"
+2026-10-28 19:58:46,First per-experiment output written,our machine,Supplemental Table S6 (file birth time of units.csv)
 2026-10-28 20:08:13,"Run finished, summary written",our machine,"results/D/heldout_primary/run.log, last line"
-2026-10-28 21:13:29,First result displayed,our machine,Supplementary Information S6 (session log; summary.json access time 21:13:34)
+2026-10-28 21:13:29,First result displayed,our machine,Supplemental Table S6 (session log; summary.json access time 21:13:34)

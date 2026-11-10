@@ -60,7 +60,7 @@ SHA-256 as recorded by the run (`summary.json` → `provenance.file_sha256`, `sp
 | `data/manifests/split.csv` | `2d792f9ebc1fdf3a82f83c709a0c40ef6417c357dc5799fe40100715b9e65ef9` | — | not in the tag tree (`data/` is untracked); SHA-256 matches the run record: yes; matches `SPLIT_SHA256` in preregistration_values.json: yes |  |
 | `results/B/B7/gates.json` | `33764aa12537242e3ffbd17bce605b1a4c0664337c1b9d749e8c26860f0b6a27` | `9b507a5875e67c4108fe570624986915eea76a1a` | yes |  |
 
-31 of 31 frozen files are byte-identical to their recorded hashes (checked when this file was last updated, 2026-11-04).
+31 of 31 frozen files are byte-identical to their recorded hashes (checked when this file was last updated, 2026-11-09).
 
 ## 4. Every other file in this repository
 
@@ -72,26 +72,34 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `.gitignore` | post-freeze edit (differs from the tag version) | `01a24d58d920384b39f1776a009b460bfb3488cd` |
 | `CITATION.cff` | added at the public release (not in the tag tree) | `da30636414b37d6ce53c544dedb2c12e9c2f6b25` |
 | `LICENSE` | added at the public release (not in the tag tree) | `f288702d2fa16d3cdf0035b15a9fcbc552cd88e7` |
-| `README.md` | post-freeze edit (differs from the tag version) | `a32c2cc43b59954c52fe73f58c36ee55f5e86c23` |
-| `VERIFICATION.md` | post-freeze (not in the tag tree) | `8c3c393f0a1b53d2bf4ddac73a632b287016729a` |
-| `brief/a_timeline.csv` | post-freeze (not in the tag tree) | `6fbb3fa406b4285e0eb7d54e263593b09148e751` |
+| `README.md` | post-freeze edit (differs from the tag version) | `dc313e01039c794d031da47c0692461f6a911e0c` |
+| `VERIFICATION.md` | post-freeze (not in the tag tree) | `08d3d8f33ee3fc82bbe7356a1c07b709c9f366e8` |
+| `brief/a_timeline.csv` | post-freeze (not in the tag tree) | `79fff036930bd11a555b4ce8cba52ea57d424d36` |
 | `brief/a_timeline.png` | post-freeze (not in the tag tree) | `180e68a15b896f77119391b6d7dd6d7c40a8722f` |
-| `brief/at_a_glance.pdf` | post-freeze (not in the tag tree) | `c01891f0cedb557fddee12ac127522846c4b18ed` |
+| `brief/at_a_glance.pdf` | post-freeze (not in the tag tree) | `3350e00849801b09a83a945b6dfb63aca85731d4` |
 | `brief/b_q1_forest.csv` | post-freeze (not in the tag tree) | `f13ef945a47db64ff53a31df369bc3c9af1dfc81` |
 | `brief/b_q1_forest.png` | post-freeze (not in the tag tree) | `03728cb43e031cd43194dc91a473dfe112b8d693` |
 | `brief/c_q2_forest.csv` | post-freeze (not in the tag tree) | `0228d8b975f23b9d56e27c98451457405364004b` |
 | `brief/c_q2_forest.png` | post-freeze (not in the tag tree) | `8ef9cf471b6567c54b2d176ce7d07af973a7384b` |
 | `brief/d_detection_vs_effect.csv` | post-freeze (not in the tag tree) | `7714ee5e5cf92e5b96f1372f6a62c0771f4a8d26` |
 | `brief/d_detection_vs_effect.png` | post-freeze (not in the tag tree) | `fe35c948531769d08f96198e5d74c7598b3c94e7` |
-| `brief/paragraphs.txt` | post-freeze (not in the tag tree) | `dd5023987bbcd75267eeb22a1c3e1c7fbb7f641a` |
-| `brief/pdf_text.txt` | post-freeze (not in the tag tree) | `53ee16fb10fd6329cc12f048b62a4c59df27c230` |
-| `brief/results.json` | post-freeze (not in the tag tree) | `e74e3ed1d0187678bdf5e8c787c6993bb14e5afe` |
+| `brief/paragraphs.txt` | post-freeze (not in the tag tree) | `c9844ecbfc6fdeab40bd7994e99b687911e522a5` |
+| `brief/pdf_text.txt` | post-freeze (not in the tag tree) | `8f7e4bcd7264d29d2c6130c101faba488363b05b` |
+| `brief/results.json` | post-freeze (not in the tag tree) | `ddacff24fae031910ff3ee3f969139a812592fe2` |
 | `check_hashes.py` | post-freeze (not in the tag tree) | `63d25f2472ebf1071f1bd46603551320367385a1` |
 | `data/manifests/d001611.assets.tsv` | post-freeze (not in the tag tree); CRLF line endings converted to LF for this repository (content otherwise as at tag `cp4`; not in the hash-checked set) | `7c9d79217087dc76d76e47788742cfa774caaa2f` |
 | `data/manifests/d001611_index.csv` | post-freeze (not in the tag tree) | `2715979acb66ff0b00cd95e511f8c922e02d0cf4` |
 | `data/manifests/provenance/d001611_bulk.csv` | post-freeze (not in the tag tree) | `7e60bf632431dba809b0374ff0bde6e5d3ad1ef4` |
 | `data/manifests/provenance.csv` | post-freeze (not in the tag tree) | `3b797c797b4ca082fa31dd7dd25acf13b7cd6db8` |
 | `environment.yml` | identical to the tag | `c302d96e92a3762932c002bb9f8c062847c49df8` |
+| `posthoc/README.md` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `ce327ee9402807537e74311de5c288254b0a9774` |
+| `posthoc/output/depression_by_experiment.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `84fa1d499e1657200e8fa671fabac0fde6883f83` |
+| `posthoc/output/pretask_by_culture.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `0733d0df135ee0ed137fafce323be36bceb86511` |
+| `posthoc/output/recovery_by_culture.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `ae99663c098032650510afa00331f47fd3db24f3` |
+| `posthoc/output/summary.json` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `e3ab052433dd396a4bdf616f27b23c965fdf9f93` |
+| `posthoc/pretask_cadence_audit.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `11a5fd880d2e2ba668603b41225bc6b215dfca5d` |
+| `posthoc/response_recovery_depression.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `6c1ad4dacc69aa04af9e542adf02ff747eec5a93` |
+| `posthoc/summarize_controls.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `f4060430d429a5f903a660d2b6a982454471780f` |
 | `pyproject.toml` | identical to the tag | `7613e43108f62d0390076088b7ecd067bb742fac` |
 | `results/B/B1/div_check.csv` | identical to the tag | `bfd23a721fbee96502c4a52ec60bfeb298d27500` |
 | `results/B/B1/units.csv` | identical to the tag | `9c5b83bd7ade55e5a79a16c998e434118578e037` |
@@ -111,7 +119,7 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `results/B/B7/gate_a_units.csv` | identical to the tag | `51ddfe4803262ee336604948922e8ee73d509cff` |
 | `results/B/B7/gate_b_global.csv` | identical to the tag | `8d4a331ad04cf59be6fdf93658f44f0e206fd74d` |
 | `results/B/B7/gate_b_tests.csv` | identical to the tag | `fee15673b1b293c214c317f2b23407bc79d0ec80` |
-| `results/D/README.md` | post-freeze edit (differs from the tag version) | `ce660dbcd0295dc72987ef0a3b20645570c19a73` |
+| `results/D/README.md` | post-freeze edit (differs from the tag version) | `030dee5d042c7137727bf8af3bf06bf7a93abcad` |
 | `results/D/dev_permuted_primary/forest_q1.csv` | identical to the tag | `53b1997a2e0c8bcb6384f38b8d0e11962663d2af` |
 | `results/D/dev_permuted_primary/forest_q1.png` | identical to the tag | `3a9d87c38a2374d6c81e7cd6ccfc474c42d12eb0` |
 | `results/D/dev_permuted_primary/forest_q2.csv` | identical to the tag | `610e273a9e86087d4b0d1893cfd1dcb12094e603` |
@@ -135,15 +143,15 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `results/D/heldout_primary/run.log` | post-freeze (not in the tag tree) | `c43a2ba1ccd2d6a6f31178fff1480d0d3eb46c7a` |
 | `results/D/heldout_primary/summary.json` | post-freeze (not in the tag tree) | `4b920d881ee88c76ab4db2bf37e740d6627c3b50` |
 | `results/D/heldout_primary/units.csv` | post-freeze (not in the tag tree) | `b407996928149921d08b7c1091a526c996448452` |
-| `results.json` | post-freeze (not in the tag tree) | `e74e3ed1d0187678bdf5e8c787c6993bb14e5afe` |
+| `results.json` | post-freeze (not in the tag tree) | `ddacff24fae031910ff3ee3f969139a812592fe2` |
 | `scripts/A2_split.py` | identical to the tag | `fbd2b044ecaa5d073d353f21a6c3f716349e57c5` |
 | `scripts/B0_download_001611.py` | identical to the tag | `90a32aebdae8cfcca4fab56151b90c6062bde751` |
 | `tests/test_cv_nulls.py` | identical to the tag | `c8cb02906907040f5946cb8555dc7e7871065d36` |
 | `tests/test_d001611_reader.py` | identical to the tag | `f8a1864a5081545ce80dfa3d31b572acd4760b9a` |
 | `tests/test_pipeline.py` | identical to the tag | `03a68aab4ec5b2940504958496f536787da13a74` |
 | `tests/test_seed.py` | identical to the tag | `e97251001505dea920336271467bdd016a998800` |
-| `tools/make_brief.py` | post-freeze (not in the tag tree) | `ec298ac7d62d0cc56050022e9ef7f8e78155e828` |
-| `tools/verify_earlier_findings.py` | post-freeze (not in the tag tree) | `21191d75a2119cdbec900510507f1ee14cad9b6f` |
+| `tools/make_brief.py` | post-freeze (not in the tag tree) | `f2c3600a80754f7ba1498b5f68f8e39ee2504b91` |
+| `tools/verify_earlier_findings.py` | post-freeze (not in the tag tree) | `20f6c30251d463cee1a859c5d0ae93b6a03d11b9` |
 | `tools/verify_earlier_findings_expected.txt` | post-freeze (not in the tag tree) | `dc1c990c11136b5c0f6966ebe4c1235c20a9c3b1` |
 | `tools/verify_earlier_findings_expected_values.json` | post-freeze (not in the tag tree) | `a5cdf1b808374e1ec11fd524a81c79b642117c93` |
 
