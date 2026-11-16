@@ -73,7 +73,7 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `CITATION.cff` | added at the public release (not in the tag tree) | `da30636414b37d6ce53c544dedb2c12e9c2f6b25` |
 | `LICENSE` | added at the public release (not in the tag tree) | `f288702d2fa16d3cdf0035b15a9fcbc552cd88e7` |
 | `README.md` | post-freeze edit (differs from the tag version) | `dc313e01039c794d031da47c0692461f6a911e0c` |
-| `VERIFICATION.md` | post-freeze (not in the tag tree) | `08d3d8f33ee3fc82bbe7356a1c07b709c9f366e8` |
+| `VERIFICATION.md` | post-freeze (not in the tag tree) | `4f87a1ca3a78c212c10faee86cefd39f44beff5c` |
 | `brief/a_timeline.csv` | post-freeze (not in the tag tree) | `79fff036930bd11a555b4ce8cba52ea57d424d36` |
 | `brief/a_timeline.png` | post-freeze (not in the tag tree) | `180e68a15b896f77119391b6d7dd6d7c40a8722f` |
 | `brief/at_a_glance.pdf` | post-freeze (not in the tag tree) | `3350e00849801b09a83a945b6dfb63aca85731d4` |
@@ -92,14 +92,14 @@ Not part of the frozen set. "identical" means the file is byte-identical to its 
 | `data/manifests/provenance/d001611_bulk.csv` | post-freeze (not in the tag tree) | `7e60bf632431dba809b0374ff0bde6e5d3ad1ef4` |
 | `data/manifests/provenance.csv` | post-freeze (not in the tag tree) | `3b797c797b4ca082fa31dd7dd25acf13b7cd6db8` |
 | `environment.yml` | identical to the tag | `c302d96e92a3762932c002bb9f8c062847c49df8` |
-| `posthoc/README.md` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `ce327ee9402807537e74311de5c288254b0a9774` |
+| `posthoc/README.md` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `35d155613e82353fb6c227e02085f2b56f5d4af7` |
 | `posthoc/output/depression_by_experiment.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `84fa1d499e1657200e8fa671fabac0fde6883f83` |
-| `posthoc/output/pretask_by_culture.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `0733d0df135ee0ed137fafce323be36bceb86511` |
+| `posthoc/output/pretask_by_culture.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `52d247f28c0e73f6d079b09beebe5f4fac72690a` |
 | `posthoc/output/recovery_by_culture.csv` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `ae99663c098032650510afa00331f47fd3db24f3` |
-| `posthoc/output/summary.json` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `e3ab052433dd396a4bdf616f27b23c965fdf9f93` |
-| `posthoc/pretask_cadence_audit.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `11a5fd880d2e2ba668603b41225bc6b215dfca5d` |
+| `posthoc/output/summary.json` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `9501a63928bd808b7006229928f5489e1b47a997` |
+| `posthoc/pretask_cadence_audit.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `7dd31890eaf909c59d738d6866be49db465166ed` |
 | `posthoc/response_recovery_depression.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `6c1ad4dacc69aa04af9e542adf02ff747eec5a93` |
-| `posthoc/summarize_controls.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `f4060430d429a5f903a660d2b6a982454471780f` |
+| `posthoc/summarize_controls.py` | post-freeze (not in the tag tree); post-hoc descriptive control, not part of the registered pipeline | `cbf091cabf9f3554d8547e3fb2c8c6e97276ee6c` |
 | `pyproject.toml` | identical to the tag | `7613e43108f62d0390076088b7ecd067bb742fac` |
 | `results/B/B1/div_check.csv` | identical to the tag | `bfd23a721fbee96502c4a52ec60bfeb298d27500` |
 | `results/B/B1/units.csv` | identical to the tag | `9c5b83bd7ade55e5a79a16c998e434118578e037` |
