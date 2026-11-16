@@ -4,7 +4,7 @@ These scripts reproduce the descriptive controls added after the registered Q1/Q
 
 ## Analyses
 
-- `pretask_cadence_audit.py`: compares population-spike autocorrelation before the first trial with an equally long task segment. The task segment is a positive control for resolving the 1-s rhythm in a short recording.
+- `pretask_cadence_audit.py`: compares population-spike autocorrelation before the first trial with an equally long task segment. The pre-task segment ends 16-26 ms before registration, so the first volley's leading edge cannot enter it. The task segment is a positive control for resolving the 1-s stimulation clock in a short recording; it is reported with volley detections kept and with the bins within 16 ms before to 12 ms after each trial time masked.
 - `response_recovery_depression.py`: measures evoked activity at 100-200 ms, late activity at 600-900 ms, and the second-half/first-half evoked-response ratio within each session. No-observation trials provide the late-activity comparison.
 - `summarize_controls.py`: writes the culture- and experiment-level CSV files and `summary.json` from the two NPZ files.
 

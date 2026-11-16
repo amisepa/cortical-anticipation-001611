@@ -3,15 +3,17 @@
   "pretask": {
     "sessions": 2700,
     "cultures": 12,
-    "duration_seconds_median": 3.19,
+    "duration_seconds_median": 3.18,
     "duration_seconds_range": [
-      2.72,
-      4.1
+      2.71,
+      4.08
     ],
-    "pretask_spikes_per_session_median": 680.0,
+    "pretask_spikes_per_session_median": 234.0,
     "sessions_with_at_least_20_pretask_spikes": 2700,
-    "autocorrelation_1s_pretask_culture_mean": -0.017776812327750795,
-    "autocorrelation_1s_task_culture_mean": 0.35337569601658386
+    "autocorrelation_1s_pretask_culture_mean": -0.02121894514509673,
+    "autocorrelation_1s_task_culture_mean": 0.35696481883680775,
+    "autocorrelation_1s_task_culture_mean_masked": -0.031336711713919684,
+    "autocorrelation_1s_pretask_cultures_at_or_below_zero": 12
   },
   "recovery": {
     "cultures": 12,

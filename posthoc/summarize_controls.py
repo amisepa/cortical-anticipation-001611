@@ -10,9 +10,10 @@ import numpy as np
 
 
 def culture_from_filename(path):
+    """Return the culture id from either layout: sub-<id>_dl/... or sub-<id>/..."""
     for part in str(path).replace('\\', '/').split('/'):
-        if part.startswith('sub-') and part.endswith('_dl'):
-            return part[:-3].split('_')[0]
+        if part.startswith('sub-'):
+            return part[:-3] if part.endswith('_dl') else part.split('_')[0]
     raise ValueError('No culture folder in ' + str(path))
 
 
@@ -27,11 +28,18 @@ pre = np.load(args.pretask)
 i1 = int(np.argmin(np.abs(pre['lags'] - 1.0)))
 pre_1s = pre['pre_culture'][:, i1]
 task_1s = pre['task_culture'][:, i1]
+task_masked_1s = pre['task_masked_culture'][:, i1] if 'task_masked_culture' in pre.files else None
 with open(os.path.join(args.out_dir, 'pretask_by_culture.csv'), 'w', newline='', encoding='utf-8') as f:
     w = csv.writer(f)
-    w.writerow(['culture', 'pretask_autocorrelation_1s', 'task_autocorrelation_1s'])
-    for culture, a, b in zip(pre['cultures'], pre_1s, task_1s):
-        w.writerow([culture, float(a), float(b)])
+    header = ['culture', 'pretask_autocorrelation_1s', 'task_autocorrelation_1s']
+    if task_masked_1s is not None:
+        header.append('task_autocorrelation_1s_masked')
+    w.writerow(header)
+    for j, (culture, a, b) in enumerate(zip(pre['cultures'], pre_1s, task_1s)):
+        row = [culture, float(a), float(b)]
+        if task_masked_1s is not None:
+            row.append(float(task_masked_1s[j]))
+        w.writerow(row)
 
 res = np.load(args.response)
 files = res['files']
@@ -84,6 +92,9 @@ summary = {
         'sessions_with_at_least_20_pretask_spikes': int((pre['pre_n'] >= 20).sum()),
         'autocorrelation_1s_pretask_culture_mean': float(np.nanmean(pre_1s)),
         'autocorrelation_1s_task_culture_mean': float(np.nanmean(task_1s)),
+        'autocorrelation_1s_task_culture_mean_masked': (
+            float(np.nanmean(task_masked_1s)) if task_masked_1s is not None else None),
+        'autocorrelation_1s_pretask_cultures_at_or_below_zero': int((pre_1s <= 0).sum()),
     },
     'recovery': {
         'cultures': len(recovery_rows),
